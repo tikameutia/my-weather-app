@@ -1,0 +1,13 @@
+h1,
+h2 {
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.container {
+  background-color: #235784;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 60%;
+  padding: 60px;
+}
