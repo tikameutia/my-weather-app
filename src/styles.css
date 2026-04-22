@@ -15,6 +15,17 @@ ul {
   text-align: center;
 }
 
+a {
+  color: #f7aa00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #bcdbdf;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
 }
