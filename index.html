@@ -14,9 +14,15 @@
   </head>
   <body>
     <div class="container">
-      <form action="">
-        <input type="text" name="city" id="city-search-input" />
-        <input type="submit" value="search" />
+      <form>
+        <input
+          type="text"
+          name="city"
+          id="city-search-input"
+          placeholder="City name (e.g. Paris, Tokyo)"
+          autocomplete="off"
+        />
+        <input type="submit" value="search" id="city-search-button" />
       </form>
       <div class="current-weather-container">
         <div class="current-weather-container-left">
