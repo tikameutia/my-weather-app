@@ -60,7 +60,7 @@ footer {
 
 #city-search-input {
   border: none;
-  border-radius: 48px;
+  border-radius: 12px;
   line-height: 46px;
   padding: 0 10px;
   width: 50%;
@@ -69,8 +69,8 @@ footer {
 #city-search-button {
   color: aliceblue;
   background: #40a8c4;
-  border: 1px solid aliceblue;
-  border-radius: 48px;
+  border: 1px solid #40a8c4;
+  border-radius: 12px;
   padding: 14px 10px;
   transition: all 150ms ease-in-out;
 }
