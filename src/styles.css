@@ -8,6 +8,12 @@ h2 {
   text-transform: uppercase;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px;
+}
+
 .container {
   background-color: #235784;
   border-radius: 10px;
@@ -17,6 +23,11 @@ h2 {
 }
 
 .current-weather-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-forecast-container {
   display: flex;
   justify-content: space-between;
 }
