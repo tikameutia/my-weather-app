@@ -35,6 +35,7 @@ footer {
 .container {
   background-color: #235784;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
   margin: 40px auto;
   max-width: 60%;
   padding: 60px;
