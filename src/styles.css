@@ -1,6 +1,10 @@
+body {
+  background: #bcdbdf;
+  color: aliceblue;
+}
+
 h1,
 h2 {
-  color: aliceblue;
   text-transform: uppercase;
 }
 
