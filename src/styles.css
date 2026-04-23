@@ -35,6 +35,7 @@ a:hover {
 
 footer {
   font-size: 12px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -58,10 +59,7 @@ footer {
 .current-weather-container {
   display: flex;
   justify-content: space-between;
-}
-
-.current-weather-container-right {
-  text-align: center;
+  padding: 10px 0;
 }
 
 .weather-forecast-container {
@@ -75,7 +73,6 @@ footer {
   border-radius: 12px;
   line-height: 46px;
   margin: 20px auto;
-  padding: 0 10px;
   width: 75%;
 }
 
@@ -94,4 +91,15 @@ footer {
   background: aliceblue;
   border: 1px solid #235784;
   color: #40a8c4;
+}
+
+#current-weather-icon {
+  font-size: 120px;
+  text-align: center;
+}
+
+#current-weather-description {
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
 }
