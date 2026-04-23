@@ -71,7 +71,7 @@ footer {
   line-height: 46px;
   margin: 20px auto;
   padding: 0 10px;
-  width: 50%;
+  width: 70%;
 }
 
 #city-search-button {
@@ -79,7 +79,8 @@ footer {
   border: 1px solid #40a8c4;
   border-radius: 12px;
   color: aliceblue;
-  padding: 14px 10px;
+  line-height: 46px;
+  padding: 0 36px;
   transition: all 150ms ease-in-out;
 }
 
