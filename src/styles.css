@@ -23,7 +23,7 @@ ul {
 }
 
 a {
-  color: #f7aa00;
+  color: #40a8c4;
   text-decoration: none;
   font-weight: 500;
 }
@@ -65,6 +65,11 @@ footer {
 .weather-forecast-container {
   display: flex;
   justify-content: space-between;
+}
+
+.highlight {
+  color: #f7aa00;
+  font-weight: bolder;
 }
 
 #city-search-input {
