@@ -33,6 +33,13 @@ footer {
   text-align: center;
 }
 
+.title {
+  color: #bcdbdf;
+  font-family: "Yeseva One", serif;
+  font-size: 32px;
+  text-align: center;
+}
+
 .container {
   background-color: #235784;
   border-radius: 10px;
@@ -62,15 +69,16 @@ footer {
   border: none;
   border-radius: 12px;
   line-height: 46px;
+  margin: 20px auto;
   padding: 0 10px;
   width: 50%;
 }
 
 #city-search-button {
-  color: aliceblue;
   background: #40a8c4;
   border: 1px solid #40a8c4;
   border-radius: 12px;
+  color: aliceblue;
   padding: 14px 10px;
   transition: all 150ms ease-in-out;
 }
