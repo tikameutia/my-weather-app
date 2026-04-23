@@ -9,6 +9,10 @@ function updateWeatherInformation(response) {
   feelsLikeTemperature.innerHTML = Math.round(
     response.data.temperature.feels_like,
   );
+  let weatherDescription = document.querySelector(
+    "#current-weather-description",
+  );
+  weatherDescription.innerHTML = response.data.condition.description;
 }
 
 function searchWeather(city) {
