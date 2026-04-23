@@ -19,6 +19,9 @@ function updateWeatherInformation(response) {
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
   let icon = document.querySelector("#current-weather-icon");
   icon.innerHTML = `<img src=${response.data.condition.icon_url}>`;
+  let currentDayAndTime = document.querySelector("#current-day-and-time");
+  let day = response.data.time;
+  currentDayAndTime.innerHTML = `${day}, 13:49`;
 }
 
 function searchWeather(city) {
