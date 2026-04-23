@@ -10,6 +10,11 @@ h2 {
   text-transform: uppercase;
 }
 
+p {
+  line-height: 18px;
+  margin: 6px auto;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
