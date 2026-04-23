@@ -15,6 +15,8 @@ function updateWeatherInformation(response) {
   weatherDescription.innerHTML = response.data.condition.description;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.temperature.humidity;
+  let windSpeed = document.querySelector("#wind-speed");
+  windSpeed.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function searchWeather(city) {
