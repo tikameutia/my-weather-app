@@ -28,10 +28,10 @@ function searchWeather(city) {
 function searchCity(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-search-input");
-  searchCity(cityInput.value);
+  searchWeather(cityInput.value);
 }
+
+searchWeather("Lelystad");
 
 let form = document.querySelector("form");
 form.addEventListener("submit", searchCity);
-
-searchWeather("Lelystad");
