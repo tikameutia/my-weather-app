@@ -13,6 +13,8 @@ function updateWeatherInformation(response) {
     "#current-weather-description",
   );
   weatherDescription.innerHTML = response.data.condition.description;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.temperature.humidity;
 }
 
 function searchWeather(city) {
