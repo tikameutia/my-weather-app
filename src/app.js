@@ -20,8 +20,28 @@ function updateWeatherInformation(response) {
   let icon = document.querySelector("#current-weather-icon");
   icon.innerHTML = `<img src=${response.data.condition.icon_url}>`;
   let currentDayAndTime = document.querySelector("#current-day-and-time");
-  let day = response.data.time;
-  currentDayAndTime.innerHTML = `${day}, 13:49`;
+  let date = new Date(response.data.time * 1000);
+  currentDayAndTime.innerHTML = updateDayAndTime(date);
+}
+
+function updateDayAndTime(date) {
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  return `${day}, ${hour}:${minute}`;
 }
 
 function searchWeather(city) {
