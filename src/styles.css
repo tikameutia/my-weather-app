@@ -17,8 +17,8 @@ p {
 
 ul {
   list-style-type: none;
+  margin: 32px 0;
   padding: 0;
-  margin: 60px;
   text-align: center;
 }
 
@@ -72,6 +72,10 @@ footer {
   font-weight: bolder;
 }
 
+.less-opaque {
+  opacity: 0.7;
+}
+
 #city-search-input {
   border: none;
   border-radius: 12px;
@@ -96,4 +100,14 @@ footer {
   background: aliceblue;
   border: 1px solid #235784;
   color: #40a8c4;
+}
+
+#weather-forecast-day {
+  color: #bcdbdf;
+  font-size: 18px;
+}
+
+#weather-forecast-icon {
+  font-size: 36px;
+  padding: 14px;
 }
