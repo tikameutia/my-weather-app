@@ -62,9 +62,11 @@ footer {
   padding: 10px 0;
 }
 
-#weather-forecast-container {
+#weather-forecast {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  margin: 48px auto;
 }
 
 .highlight {
@@ -109,5 +111,5 @@ footer {
 
 #weather-forecast-icon {
   font-size: 36px;
-  padding: 14px;
+  padding: 8px;
 }
