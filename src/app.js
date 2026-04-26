@@ -58,9 +58,13 @@ function searchCity(event) {
 
 function searchForecast(day) {
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-  let forecastHtml = `
-<li>
-            <div id="weather-forecast-day">Tomorrow</div>
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div>
+            <div id="weather-forecast-day">${day}</div>
             <div id="weather-forecast-icon">☁️</div>
             <div class="highlight">
               <span id="weather-forecast-temp-max">15</span>° ~
@@ -68,10 +72,16 @@ function searchForecast(day) {
                 ><span id="weather-forecast-temp-min">12</span>°</span
               >
             </div>
-          </li>`;
+         </div>
+    `;
+  });
+  let weatherForecast = document.querySelector("#weather-forecast");
+  weatherForecast.innerHTML = forecastHtml;
 }
 
 searchWeather("Lelystad");
 
 let form = document.querySelector("form");
 form.addEventListener("submit", searchCity);
+
+searchForecast();
