@@ -56,6 +56,21 @@ function searchCity(event) {
   searchWeather(cityInput.value);
 }
 
+function searchForecast(day) {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = `
+<li>
+            <div id="weather-forecast-day">Tomorrow</div>
+            <div id="weather-forecast-icon">☁️</div>
+            <div class="highlight">
+              <span id="weather-forecast-temp-max">15</span>° ~
+              <span class="less-opaque"
+                ><span id="weather-forecast-temp-min">12</span>°</span
+              >
+            </div>
+          </li>`;
+}
+
 searchWeather("Lelystad");
 
 let form = document.querySelector("form");

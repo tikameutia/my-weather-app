@@ -62,7 +62,7 @@ footer {
   padding: 10px 0;
 }
 
-.weather-forecast-container {
+#weather-forecast-container {
   display: flex;
   justify-content: space-between;
 }
