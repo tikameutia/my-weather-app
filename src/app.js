@@ -22,6 +22,8 @@ function updateWeatherInformation(response) {
   let currentDayAndTime = document.querySelector("#current-day-and-time");
   let date = new Date(response.data.time * 1000);
   currentDayAndTime.innerHTML = updateDayAndTime(date);
+
+  searchForecast(response.data.city);
 }
 
 function updateDayAndTime(date) {
@@ -46,7 +48,7 @@ function updateDayAndTime(date) {
 
 function searchWeather(city) {
   let apiKey = "0050t012172bb4a92f6b53332o6cb5f4";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(updateWeatherInformation);
 }
 
@@ -56,7 +58,13 @@ function searchCity(event) {
   searchWeather(cityInput.value);
 }
 
-function searchForecast(day) {
+function getForecast(city) {
+  let apiKey = "0050t012172bb4a92f6b53332o6cb5f4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function searchForecast(response) {
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHtml = "";
 
@@ -83,5 +91,3 @@ searchWeather("Lelystad");
 
 let form = document.querySelector("form");
 form.addEventListener("submit", searchCity);
-
-searchForecast();
